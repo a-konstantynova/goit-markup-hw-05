@@ -24,7 +24,7 @@
           <a class="logo logo-light link" href="#"><span class="logo-span">Web</span>Studio</a>
           <ul class="navigation-list list">
             <li class="navigation-item list-item">
-              <a class="link current" href="./index.html">Студия</a>
+              <a class="link current position-studio" href="./index.html">Студия</a>
             </li>
             <li class="navigation-item list-item">
               <a  class="link-header link" href="./portfolio.html">Портфолио</a>
@@ -64,7 +64,7 @@
       <!--=========HERO==========-->
       <section class="hero section">
         <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button class="hero-button" type="button">Заказать услугу</button>
+        <button data-modal-open class="hero-button" type="button">Заказать услугу</button>
       </section>
       <!--=========END HERO==========-->
       
@@ -120,13 +120,22 @@
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="work-list-item">
-              <img class="work-list-img" width="370" height="294" src="./img/boxes/box-1.jpg" alt="пишет код">
+              <img class="work-list-img" width="370" height="294" src="./img/boxes/box-1.jpg" alt="программист пишет код">
+              <div class="work-lower-wrapper">
+                <p class="work-lower-paragraph">Десктопные приложения</p>
+              </div>
             </li>
             <li class="work-list-item">
-              <img class="work-list-img" width="370" height="294" src="./img/boxes/box-2.jpg" alt="настраивает отзывчивость сайта">
+              <img class="work-list-img" width="370" height="294" src="./img/boxes/box-2.jpg" alt="дизайнер выбирает макет">
+              <div class="work-lower-wrapper">
+                <p class="work-lower-paragraph">Мобильные приложения</p>
+              </div>
             </li>
             <li class="work-list-item">
-              <img class="work-list-img" width="370" height="294" src="./img/boxes/box-3.jpg" alt="подбирает цвет">
+              <img class="work-list-img" width="370" height="294" src="./img/boxes/box-3.jpg" alt="дизайнер подбирает цвет">
+              <div class="work-lower-wrapper">
+                <p class="work-lower-paragraph">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -399,5 +408,20 @@
       </div>
     </footer>
     <!--==========END FOOTER==========-->
+    <!--=========MODAL WINDOW=========-->
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal-window">
+        <button data-modal-close class="modal-close" type="button">
+          <svg class="modal-svg" width="30" height="30">
+            <use href="./img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+    
+      </div>
+    </div>
+    <!--=========END MODAL WINDOW=========-->
+    <!--=========SCRIPT=========-->
+    <script src="./js/modal.js"></script>
+    <!--=========END SCRIPT=========-->
 </body>
 </html>
