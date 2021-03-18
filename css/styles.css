@@ -73,14 +73,14 @@ img {
 }
 
 .current::after {
-content: "";
-position: absolute;
-display: block;
-width: 100%;
-height: 4px;
-background: #2196F3;
-border-radius: 2px;
-bottom: 0;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  bottom: 0;
 }
 .position-studio {
   position: relative;
@@ -160,7 +160,6 @@ bottom: 0;
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .link-header:hover,
@@ -197,7 +196,6 @@ bottom: 0;
   margin-right: 10px;
   fill: var(--light-grey-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .link-contacts:hover .header-svg,
@@ -258,7 +256,7 @@ bottom: 0;
   border-radius: 4px;
   border: 1px solid transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -323,7 +321,7 @@ bottom: 0;
 }
 
 .work-list-item {
-   position: relative;
+  position: relative;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -339,23 +337,23 @@ bottom: 0;
 }
 
 .work-lower-paragraph {
-font-weight: bold;
-font-style: 14px;
-line-height: 1.14;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: var(--white-color);
-padding-top: 27px;
-padding-bottom: 27px;
+  font-weight: bold;
+  font-style: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 .work-lower-wrapper {
   position: absolute;
-  bottom:0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(47, 48, 58, 0.8);  
+  background-color: rgba(47, 48, 58, 0.8);
 }
 /* =========END WORK========== */
 
@@ -495,7 +493,6 @@ padding-bottom: 27px;
   fill: var(--secondary-color);
 }
 
-
 /*=========REGULAR CLIENTS========== */
 
 /* =========FOOTER========== */
@@ -622,10 +619,10 @@ padding-bottom: 27px;
   border-radius: 4px;
   border: 1px solid transparent;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-portfolio:hover,
@@ -692,6 +689,7 @@ padding-bottom: 27px;
 .portfolio-list-link:hover .portfolio-overlay-paragraph,
 .portfolio-list-link:focus .portfolio-overlay-paragraph {
   transform: translateY(0);
+  opacity: 1;
 }
 
 .portfolio-overlay-paragraph {
@@ -709,6 +707,7 @@ padding-bottom: 27px;
   /* overflow: scroll; */
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
 }
 /* =========END PORTFOLIO========== */
 .backdrop {
@@ -718,7 +717,9 @@ padding-bottom: 27px;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform background-color box-shadow border-radius fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -735,15 +736,16 @@ padding-bottom: 27px;
   height: 581px;
   transform: translate(-50%, -50%);
   background-color: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px; 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .modal-svg {
   position: absolute;
   top: 8px;
   right: 8px;
-  background: var(--white-color);
+  background-color: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   fill: var(--black-color);
   border-radius: 50%;
@@ -752,4 +754,3 @@ padding-bottom: 27px;
 /*==========MODAL WINDOW===========*/
 
 /*==========END MODAL WINDOW===========*/
-
